@@ -1,5 +1,6 @@
 # PlantUML
 
+<<<<<<< HEAD
 ## Usage
 
 ```bash
