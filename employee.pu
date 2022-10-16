@@ -1,0 +1,35 @@
+@startuml exe
+title 社員-日報, 管理者テーブル
+entity employers {
+  + id INT(10) [PK]
+  --
+  name VARCHAR(20)
+  email VARCHAR(255)
+  password VARCHAR(30)
+  created_at TIMESTAMP
+  updated_at TIMESTAMP
+}
+
+entity daily_reports {
+  + id INT [PK]
+  --
+  # employee_id [FK]
+  clock_in TIMESTAMP
+  clock_out TIMESTAMP
+  rest_time_in TIMESTAMP
+  rest_time_out TIMESTAMP
+  business_outline TEXT
+}
+
+entity admin {
+  + id INT(10) [PK]
+  --
+  name VARCHAR(20)
+  email VARCHAR(255)
+  password VARCHAR(30)
+  created_at TIMESTAMP
+  updated_at TIMESTAMP
+}
+
+employers ---{ daily_reports
+@enduml

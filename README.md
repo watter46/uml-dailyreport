@@ -1,6 +1,7 @@
 # PlantUML
 
-<<<<<<< HEAD
+web日報登録システム開発のUML
+
 ## Usage
 
 ```bash
@@ -10,4 +11,4 @@ $ make init
 ```
 
 アクセス
-http://localhost:28000
+http://localhost:29000
